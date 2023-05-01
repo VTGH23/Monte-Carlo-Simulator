@@ -1,3 +1,4 @@
+Welcome to the Monte Carlo Simulator.
 test_13_jackpot (__main__.AnalyzerTestSuite.test_13_jackpot)
 Test jackpot works as expected with test Game data (three jackpots expected). ... ok
 test_14_jackpot (__main__.AnalyzerTestSuite.test_14_jackpot)
@@ -21,7 +22,7 @@ Test length of returned list equals number of rolls specified. ... ok
 test_5_roll (__main__.DieTestSuite.test_5_roll)
 Test that all faces in randomized roll list are a subset of the initialized faces array. ... ok
 test_6_show_current (__main__.DieTestSuite.test_6_show_current)
-Test of show_current method returns the df dataframe attribute as specified. ... ok
+Test of show_current method returns expected dataframe. ... ok
 test_7_show_current (__main__.DieTestSuite.test_7_show_current)
 Test if show_current method correctly returns the updated df dataframe attribute after a weight change. ... ok
 test_10_show (__main__.GameTestSuite.test_10_show)
@@ -36,6 +37,6 @@ test_9_play (__main__.GameTestSuite.test_9_play)
 Test all values in private dataframe exist in the Die faces list. ... ok
 
 ----------------------------------------------------------------------
-Ran 18 tests in 0.049s
+Ran 18 tests in 0.105s
 
 OK

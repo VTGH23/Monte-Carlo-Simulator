@@ -1,6 +1,6 @@
-from montecarlo import Die
-from montecarlo import Game
-from montecarlo import Analyzer
+from montecarlo_dir.montecarlo import Die
+from montecarlo_dir.montecarlo import Game
+from montecarlo_dir.montecarlo import Analyzer
 import pandas as pd
 import numpy as np
 import unittest
@@ -16,7 +16,7 @@ class DieTestSuite(unittest.TestCase):
         test_1_object = Die(np.array(['one','two','three','four','five','six']))
         test_1_object.change_weight("one", 100)
         
-        self.assertTrue((test_1_object.df.loc[test_1_object.df['faces'] == 'one', 'weights'].iloc[0])==100)
+        self.assertTrue((test_1_object.show_current().loc[test_1_object.show_current()['faces'] == 'one', 'weights'].iloc[0])==100)
 
     def test_2_change_weight(self):
         """
@@ -53,11 +53,12 @@ class DieTestSuite(unittest.TestCase):
 
     def test_6_show_current(self):
         """
-        Test of show_current method returns the df dataframe attribute as specified.
+        Test of show_current method returns expected dataframe.
         """        
         test_6_object = Die(np.array(['one','two','three','four','five','six']))
-        
-        self.assertTrue(test_6_object.show_current().equals(test_6_object.df))
+        test_data_6 = {'faces': ['one','two','three','four','five','six'], 'weights': [1,1,1,1,1,1]}
+        test_dataframe_6 = pd.DataFrame(data=test_data_6)
+        self.assertTrue((test_6_object.show_current()==(test_dataframe_6)).all().all())
 
     def test_7_show_current(self):
         """
@@ -65,8 +66,9 @@ class DieTestSuite(unittest.TestCase):
         """     
         test_7_object = Die(np.array(['one','two','three','four','five','six']))
         test_7_object.change_weight("one", 100)
-
-        self.assertTrue(test_7_object.show_current().equals(test_7_object.df))
+        test_data_7 = {'faces': ['one','two','three','four','five','six'], 'weights': [100,1,1,1,1,1]}
+        test_dataframe_7 = pd.DataFrame(data=test_data_7)
+        self.assertTrue((test_7_object.show_current()==(test_dataframe_7)).all().all())
 
 class GameTestSuite(unittest.TestCase):
     """

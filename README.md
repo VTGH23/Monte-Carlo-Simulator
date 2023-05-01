@@ -256,3 +256,27 @@ print(demo_Analyzer_object_1.face_counts_per_roll_results)
 """
 
 # Manifest
+## Monte-Carlo-Simulator:
+FinalProjectSubmissionTemplate.ipynb
+LICENSE
+README.md
+montecarlo_dir/
+montecarlo_dir.egg-info/
+montecarlo_results.txt
+montecarlo_test.py
+setup.py
+
+## montecarlo_dir:
+__init__.py
+__pycache__/
+montecarlo.py
+
+## montecarlo_dir/__pycache__:
+__init__.cpython-311.pyc
+montecarlo.cpython-311.pyc
+
+## montecarlo_dir.egg-info:
+PKG-INFO
+SOURCES.txt
+dependency_links.txt
+top_level.txt
