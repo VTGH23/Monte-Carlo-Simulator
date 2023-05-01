@@ -1,0 +1,41 @@
+test_13_jackpot (__main__.AnalyzerTestSuite.test_13_jackpot)
+Test jackpot works as expected with test Game data (three jackpots expected). ... ok
+test_14_jackpot (__main__.AnalyzerTestSuite.test_14_jackpot)
+Test jackpot works as expected with test Game data (zero jackpots expected). ... ok
+test_15_combo (__main__.AnalyzerTestSuite.test_15_combo)
+Test combo method works as expected with test Game data ... ok
+test_16_combo (__main__.AnalyzerTestSuite.test_16_combo)
+Test combo method works as expected with different test Game data. Also includes testing for sorting requirement. ... ok
+test_17_face_counts_per_roll (__main__.AnalyzerTestSuite.test_17_face_counts_per_roll)
+Test face_counts_per_roll method works as expected with test Game data. ... ok
+test_18_face_counts_per_roll (__main__.AnalyzerTestSuite.test_18_face_counts_per_roll)
+Test face_counts_per_roll method works as expected with different test Game data ... ok
+test_1_change_weight (__main__.DieTestSuite.test_1_change_weight)
+Test a valid weight change for a valid face. ... ok
+test_2_change_weight (__main__.DieTestSuite.test_2_change_weight)
+Test an invalid weight change for a valid face. ... ok
+test_3_change_weight (__main__.DieTestSuite.test_3_change_weight)
+Test a valid weight change for a invalid face. ... ok
+test_4_roll (__main__.DieTestSuite.test_4_roll)
+Test length of returned list equals number of rolls specified. ... ok
+test_5_roll (__main__.DieTestSuite.test_5_roll)
+Test that all faces in randomized roll list are a subset of the initialized faces array. ... ok
+test_6_show_current (__main__.DieTestSuite.test_6_show_current)
+Test of show_current method returns the df dataframe attribute as specified. ... ok
+test_7_show_current (__main__.DieTestSuite.test_7_show_current)
+Test if show_current method correctly returns the updated df dataframe attribute after a weight change. ... ok
+test_10_show (__main__.GameTestSuite.test_10_show)
+Test if show method returns error message if invalid form is passed as parameter. ... ok
+test_11_show (__main__.GameTestSuite.test_11_show)
+Test expected dimensions of wide form. ... ok
+test_12_show (__main__.GameTestSuite.test_12_show)
+Test expected dimensions of narrow form. ... ok
+test_8_play (__main__.GameTestSuite.test_8_play)
+Test if private dataframe created is of shape N rolls by M dice. ... ok
+test_9_play (__main__.GameTestSuite.test_9_play)
+Test all values in private dataframe exist in the Die faces list. ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.049s
+
+OK
