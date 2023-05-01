@@ -267,12 +267,12 @@ print(demo_Analyzer_object_1.face_counts_per_roll_results)
 * setup.py
 
 ## montecarlo_dir:
-* \__init__.py
-* \___pycache__/
+* \_\_init\_\_.py
+* \_\_pycache\_\_/
 * montecarlo.py
 
-## montecarlo_dir/\__pycache__:
-* \__init__.cpython-311.pyc
+## montecarlo_dir/\_\_pycache\_\_:
+* \_\_init\_\_.cpython-311.pyc
 * montecarlo.cpython-311.pyc
 
 ## montecarlo_dir.egg-info:
